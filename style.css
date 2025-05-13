@@ -433,3 +433,41 @@ summary {
   border-left: 5px solid #003366;
   border-radius: 6px;
 }
+<!-- Tailwind Typography :contentReference[oaicite:3]{index=3}pagina che include Tailwind userà subito le classi `prose`.
+
+---
+
+## 1 · `manifesto.h:contentReference[oaicite:4]{index=4}
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/:contentReference[oaicite:5]{index=5}cide -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unp:contentReference[oaicite:6]{index=6}pography]}</script>
+
+  <style>.gradien:contentReference[oaicite:7]{index=7}
+</head>
+<body class="bg-slate-50 text-slate-90:contentReference[oaicite:8]{index=8} class="gradient-bg text-white shadow-lg">
+  <div class="m:contentReference[oaicite:9]{index=9}"text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h:contentReference[oaicite:10]{index=10}nderline">Home</a>
+      <a href="manifesto.h:contentReference[oaicite:11]{index=11}ass="hover:underline">Fonti</a>
+      <a href="ricerca.:contentReference[oaicite:12]{index=12}ro/scuro">
+        <i data-lucide="moon-s:contentReference[oaicite:13]{index=13}agina -->
+<main class="max-w-4xl mx-auto px-6 py-:contentReference[oaicite:14]{index=14}>“Dove il diritto si fa coscienza, e la coscie:contentReference[oaicite:15]{index=15}   <p>Il progetto nasce come costruzione culturale autonoma… <span:contentReference[oaicite:16]{index=16}pan> …</p>
+
+    <h3>II – Principi Ordinanti</h3>
+    <u:contentReference[oaicite:17]{index=17}ormativo e giurisprudenziale.</li>
+      <li><strong>Responsabilit:contentReference[oaicite:18]{index=18}i>
+      <li><strong>Access:contentReference[oaicite:19]{index=19}metodo, non all’ideologia.</li>
+      <li><strong>Eticità della cono:contentReference[oaicite:20]{index=20}  <h3>III – Visione</h3>
+    <p>:contentReference[oaicite:21]{index=21}/p>
+
+    <p class="text-right font-semi:contentReference[oaicite:22]{index=22}bg text-white text-center py-6">
+  <p class="font-s:contentReference[oaicite:23]{index=23}t comuni -->
+<script src="theme.js"></script>
+<script src="sw-register.js"></script>
+<script src="last-update.js"></script>
+<script src="tooltip-norme.js"></script>
+<script src="sidebar.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

@@ -29,3 +29,121 @@
 <script src="accessibility.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ius Portalex · Home</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tema chiaro/scuro già esistente -->
+  <script src="theme.js" defer></script>
+  <script src="sw-register.js" defer></script>
+  <script src="last-update.js" defer></script>
+
+  <style>
+    /* sfumatura di marca */
+    .gradient-bg {
+      background: linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+
+  <!-- Barra di navigazione -->
+  <header class="gradient-bg text-white shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-2xl font-semibold tracking-wide">
+        <span class="hidden sm:inline">⚖️</span> Ius Portalex
+      </h1>
+
+      <nav class="flex gap-4 text-sm font-medium">
+        <a href="manifesto.html" class="hover:underline">Manifesto</a>
+        <a href="archivio-norme.html" class="hover:underline">Fonti</a>
+        <a href="ricerca.html" class="hover:underline">Ricerca</a>
+        <button onclick="toggleTheme()" title="Tema chiaro/scuro">
+          <i data-lucide="moon-star" class="w-5 h-5"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden gradient-bg text-white">
+    <div class="max-w-4xl mx-auto py-20 px-6 text-center">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+        Il diritto che guida il futuro
+      </h2>
+      <p class="text-lg sm:text-xl opacity-90">
+        Approfondimenti · Norme · Strumenti interattivi  
+        Tutto in un unico portale, pensato da giuristi per giuristi e cittadini consapevoli.
+      </p>
+      <a href="contenuti.html"
+         class="inline-block mt-8 bg-white/20 hover:bg-white/30 backdrop-blur px-6 py-3 rounded-full font-semibold">
+        Esplora le notizie giuridiche
+      </a>
+    </div>
+
+    <!-- decorazione “waves” -->
+    <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,64L48,53.3C96,43,192,21,288,32C384,43,480,85,576,90.7C672,96,768,64,864,48C960,32,1056,32,1152,26.7C1248,21,1344,11,1392,5.3L1440,0L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z" fill="#f8fafc"></path>
+    </svg>
+  </section>
+
+  <!-- Sezioni in evidenza -->
+  <main class="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 py-16 px-6">
+
+    <!-- card -->
+    <a href="costituzione.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="book-open" class="w-8 h-8 text-blue-600 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Costituzione interattiva</h3>
+      <p class="text-sm opacity-80 mb-4">Consulta i 139 articoli in forma dinamica, con collegamenti a giurisprudenza e dottrina.</p>
+      <span class="mt-auto text-blue-600 font-medium group-hover:underline">Apri →</span>
+    </a>
+
+    <a href="codice-penale.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="gavel" class="w-8 h-8 text-red-600 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Codice Penale navigabile</h3>
+      <p class="text-sm opacity-80 mb-4">Libri, titoli, capi e articoli del c.p. con testo vigente e link Normattiva.</p>
+      <span class="mt-auto text-red-600 font-medium group-hover:underline">Apri →</span>
+    </a>
+
+    <a href="glossario.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="graduation-cap" class="w-8 h-8 text-emerald-600 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Glossario tecnico</h3>
+      <p class="text-sm opacity-80 mb-4">Termini-chiave, definizioni dottrinali e riferimenti normativi per ogni concetto.</p>
+      <span class="mt-auto text-emerald-600 font-medium group-hover:underline">Apri →</span>
+    </a>
+
+    <a href="cronologia.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="timeline" class="w-8 h-8 text-purple-600 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Cronologia delle riforme</h3>
+      <p class="text-sm opacity-80 mb-4">Eventi legislativi essenziali, dal 1948 a oggi, con note e fonti ufficiali.</p>
+      <span class="mt-auto text-purple-600 font-medium group-hover:underline">Apri →</span>
+    </a>
+
+    <a href="novita.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="sparkles" class="w-8 h-8 text-orange-500 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Ultimi contenuti</h3>
+      <p class="text-sm opacity-80 mb-4">Saggi, news e analisi pubblicati recentemente dalla redazione.</p>
+      <span class="mt-auto text-orange-500 font-medium group-hover:underline">Apri →</span>
+    </a>
+
+    <a href="contattaci.html" class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition p-6">
+      <i data-lucide="mail" class="w-8 h-8 text-yellow-600 group-hover:scale-110 transition"></i>
+      <h3 class="text-xl font-semibold mt-4 mb-2">Contatta la redazione</h3>
+      <p class="text-sm opacity-80 mb-4">Scrivici proposte, idee, segnalazioni normative o richieste di collaborazione.</p>
+      <span class="mt-auto text-yellow-600 font-medium group-hover:underline">Apri →</span>
+    </a>
+  </main>
+
+  <!-- carica le icone -->
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<input type="text" id="searchBar" onkeyup="filterArticles()" placeholder="Cerca nel sito...">
+<select id="materiaFiltro" onchange="filterArticles()">
+  <option value="tutte">Tutte le materie</option>
+  <option value="penale">Diritto Penale</option>
+  <option value="civile">Diritto Civile</option>
+  <option value="amministrativo">Diritto Amministrativo</option>
+</select>
+
+<div id="risultati">
+  <div class="articolo" data-materia="penale">
+    <h3>Il principio di legalità</h3>
+    <p>Fondamento del diritto penale e del giusto processo...</p>
+  </div>
+  <div class="articolo" data-materia="amministrativo">
+    <h3>La discrezionalità amministrativa</h3>
+    <p>Analisi delle fonti, dei limiti e del sindacato del giudice...</p>
+  </div>
+</div>
+
+<script src="search.js"></script>

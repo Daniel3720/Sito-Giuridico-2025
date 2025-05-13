@@ -258,3 +258,31 @@ summary {
   color: #004080;
   text-decoration: none;
 }
+.calendar-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 60px;
+}
+
+.event-day {
+  background-color: #003366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#event-details {
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+}

@@ -1,56 +1,26 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Approfondimenti Giuridici</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  <script src="last-update.js"></script>
-  <div class="access-panel">
-  <button onclick="increaseFontSize()">A+</button>
-  <button onclick="decreaseFontSize()">A−</button>
-  <button onclick="toggleContrast()">🌓 Contrasto</button>
-</div>
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ius Portalex · Approfondimenti</title>
+<script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={plugins:[tailwindcss.typography]};</script>
+<script src="https://unpkg.com/lucide@latest"></script><style>.gradient-bg{background:linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%)}</style>
+</head><body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<header class="gradient-bg text-white shadow-lg"><div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6"><h1 class="text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h1><nav class="flex gap-4 text-sm font-medium"><a href="index.html">Home</a><a href="manifesto.html">Manifesto</a><a href="archivio-norme.html">Fonti</a><a href="ricerca.html">Ricerca</a><button onclick="toggleTheme()"><i data-lucide="moon-star" class="w-5 h-5"></i></button></nav></div></header>
 
-<script src="accessibility.js"></script>
-  <script src="sidebar.js"></script>
-  <script src="tooltip-norme.js"></script>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="contenuti.html">Notizie</a> |
-      <a href="approfondimenti.html">Approfondimenti</a> |
-      <a href="penale.html">Penale</a> |
-      <a href="civile.html">Civile</a> |
-      <a href="amministrativo.html">Amministrativo</a>
-    </nav>
-  </header>
+<main class="max-w-4xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-bold mb-10">Approfondimenti Giuridici</h2>
 
-  <h1>Approfondimenti Giuridici</h1>
+  <article class="prose lg:prose-xl dark:prose-invert mb-16">
+    <h3>Il principio di legalità</h3>
+    <p>Analisi sistematica su <span class="norma">art. 25 Cost.</span> e <span class="norma">art. 1 c.p.</span> …</p>
+    <a href="pdf/legalita.pdf" class="text-blue-600 font-semibold" target="_blank">Scarica PDF</a>
+  </article>
 
-  <!-- Sezione saggi -->
-  <section class="approfondimento">
-    <h2>Il principio di legalità tra Costituzione e Codice Penale</h2>
-    <p><strong>Autore:</strong> Daniel3720</p>
-    <p><em>Abstract:</em> Analisi tecnico-sistematica del principio di legalità, dei suoi corollari e dei suoi riflessi sulla produzione normativa e sull’attività giurisprudenziale.</p>
-    <a href="pdf/legalita.pdf" target="_blank">📄 Leggi il saggio in PDF</a>
-  </section>
+  <!-- altra voce -->
+  <article class="prose lg:prose-xl dark:prose-invert">
+    <h3>Beni pubblici e amministrazione condivisa</h3>
+    <p>Studio comparato sulle concessioni ex <span class="norma">art. 823 c.c.</span>.</p>
+  </article>
+</main>
 
-  <section class="approfondimento">
-    <h2>La concessione di beni pubblici e i patti di collaborazione</h2>
-    <p><strong>Autore:</strong> Daniel3720</p>
-    <p><em>Abstract:</em> Studio comparato sul ruolo del privato nell’amministrazione condivisa dei beni comuni, alla luce del diritto amministrativo contemporaneo.</p>
-    <a href="pdf/concessione-patto.pdf" target="_blank">📄 Leggi il saggio in PDF</a>
-  </section>
-
-  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
-    <p><strong>Sito Giuridico 2025</strong> – La dottrina incontra la pratica</p>
-    <p><a href="mailto:contatti@sitogiuridico.it" style="color:#ffa;">Contattaci</a></p>
-    <p><em>“L'approfondimento è la vera giustizia del pensiero.”</em></p>
-  </footer>
-
-  <script src="theme.js"></script>
-  <script src="sw-register.js"></script>
-</body>
-</html>
+<footer class="gradient-bg text-white text-center py-6 mt-16"><p class="font-semibold">© 2025 Ius Portalex</p></footer>
+<script src="theme.js"></script><script src="sw-register.js"></script><script src="last-update.js"></script><script src="tooltip-norme.js"></script><script>lucide.createIcons();</script></body></html>

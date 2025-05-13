@@ -349,3 +349,25 @@ summary {
     display: none;
   }
 }
+.voce-glossario {
+  background-color: #f8f8f8;
+  margin: 10px auto;
+  max-width: 800px;
+  padding: 15px;
+  border-left: 4px solid #003366;
+  border-radius: 4px;
+}
+
+.voce-glossario h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+#searchGlossario {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  font-size: 16px;
+}

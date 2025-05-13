@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Contattaci</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contenuti.html">Notizie</a> |
+      <a href="approfondimenti.html">Approfondimenti</a> |
+      <a href="autori.html">Autori</a> |
+      <a href="contattaci.html">Contattaci</a>
+    </nav>
+  </header>
+
+  <h1>Contattaci</h1>
+
+  <form action="https://formspree.io/f/mvgavqww" method="POST">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="_replyto" required><br><br>
+
+    <label for="messaggio">Messaggio:</label><br>
+    <textarea id="messaggio" name="messaggio" rows="6" required></textarea><br><br>
+
+    <button type="submit">Invia</button>
+  </form>
+
+  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
+    <p><strong>Sito Giuridico 2025</strong> – Scrivici per collaborazioni, spunti, segnalazioni</p>
+    <p><em>“Il dialogo è il fondamento della crescita giuridica collettiva.”</em></p>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>

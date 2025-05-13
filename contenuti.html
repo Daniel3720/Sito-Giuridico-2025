@@ -1,68 +1,28 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Notizie Giuridiche</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  <script src="sw-register.js"></script>
-  <script src="last-update.js"></script>
-  <div class="access-panel">
-  <button onclick="increaseFontSize()">A+</button>
-  <button onclick="decreaseFontSize()">A−</button>
-  <button onclick="toggleContrast()">🌓 Contrasto</button>
-</div>
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ius Portalex · Notizie</title>
+<script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={plugins:[tailwindcss.typography]};</script>
+<script src="https://unpkg.com/lucide@latest"></script><style>.gradient-bg{background:linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%)}</style>
+</head><body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<header class="gradient-bg text-white shadow-lg"><div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6"><h1 class="text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h1><nav class="flex gap-4 text-sm font-medium"><a href="index.html">Home</a><a href="manifesto.html">Manifesto</a><a href="archivio-norme.html">Fonti</a><a href="ricerca.html">Ricerca</a><button onclick="toggleTheme()"><i data-lucide="moon-star" class="w-5 h-5"></i></button></nav></div></header>
 
-<script src="accessibility.js"></script>
-  <script src="sidebar.js"></script>
-  <script src="tooltip-norme.js"></script>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="news.html">News</a> |
-      <a href="approfondimenti.html">Approfondimenti</a>
-    </nav>
-  </header>
-<button onclick="toggleTheme()">Modalità Chiara / Scura</button>
+<main class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-bold mb-10">Ultime Notizie Giuridiche</h2>
 
-  <h1>Notizie Giuridiche</h1>
-
-  <!-- BARRA DI RICERCA -->
-  <input type="text" id="searchBar" onkeyup="filterArticles()" placeholder="Cerca nel sito...">
-
-  <!-- FILTRO PER MATERIA -->
-  <select id="materiaFiltro" onchange="filterArticles()">
-    <option value="tutte">Tutte le materie</option>
-    <option value="penale">Diritto Penale</option>
-    <option value="civile">Diritto Civile</option>
-    <option value="amministrativo">Diritto Amministrativo</option>
-  </select>
-
-  <!-- ARTICOLI DI PROVA -->
-  <div id="risultati">
-    <div class="articolo" data-materia="penale">
-      <h3>Riforma del Codice Penale</h3>
-      <p>Il nuovo disegno di legge introduce modifiche significative alla parte generale...</p>
-    </div>
-    <div class="articolo" data-materia="civile">
-      <h3>La nuova disciplina del danno non patrimoniale</h3>
-      <p>Una recente sentenza della Cassazione chiarisce i confini interpretativi...</p>
-    </div>
-    <div class="articolo" data-materia="amministrativo">
-      <h3>La motivazione nel provvedimento amministrativo</h3>
-      <p>Approfondimento sulle novità introdotte dal decreto legge 2025...</p>
-    </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- CARD esempio -->
+    <article class="bg-white dark:bg-slate-800 rounded-xl shadow p-6 flex flex-col">
+      <h3 class="text-xl font-semibold text-blue-700 mb-2">Riforma del Codice Penale approvata</h3>
+      <p class="text-sm opacity-80 flex-grow">Il Parlamento approva in via definitiva il DDL di revisione organica del Libro I.</p>
+      <a href="contenuti.html" class="mt-4 text-blue-600 font-medium hover:underline">Leggi di più →</a>
+    </article>
+    <!-- duplicare le card per altre news -->
   </div>
+</main>
 
-  <!-- FOOTER COINVOLGENTE -->
-  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
-    <p><strong>Sito Giuridico 2025</strong> – Conoscenza accessibile per uno Stato di diritto consapevole</p>
-    <p>Creato da Daniel3720 – Studente e futuro giurista | <a href="mailto:contatti@sitogiuridico.it" style="color:#ffa;">Contattaci</a></p>
-    <p><em>“Il diritto non è solo norma, è responsabilità.”</em></p>
-  </footer>
+<footer class="gradient-bg text-white text-center py-6 mt-16"><p class="font-semibold">© 2025 Ius Portalex</p></footer>
+<script src="theme.js"></script><script src="sw-register.js"></script><script src="last-update.js"></script><script>lucide.createIcons();</script></body></html>
 
-  <!-- SCRIPT -->
   <script src="search.js"></script>
 <script src="theme.js"></script>
 </body>

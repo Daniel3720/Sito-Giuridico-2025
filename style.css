@@ -220,3 +220,13 @@ summary {
   font-size: 12px;
   cursor: pointer;
 }
+#rss-feed {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+#rss-feed li {
+  margin: 10px 0;
+  font-size: 16px;
+}

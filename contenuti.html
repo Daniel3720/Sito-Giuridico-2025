@@ -1,20 +1,58 @@
-<input type="text" id="searchBar" onkeyup="filterArticles()" placeholder="Cerca nel sito...">
-<select id="materiaFiltro" onchange="filterArticles()">
-  <option value="tutte">Tutte le materie</option>
-  <option value="penale">Diritto Penale</option>
-  <option value="civile">Diritto Civile</option>
-  <option value="amministrativo">Diritto Amministrativo</option>
-</select>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Notizie Giuridiche</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="news.html">News</a> |
+      <a href="approfondimenti.html">Approfondimenti</a>
+    </nav>
+  </header>
+<button onclick="toggleTheme()">Modalità Chiara / Scura</button>
 
-<div id="risultati">
-  <div class="articolo" data-materia="penale">
-    <h3>Il principio di legalità</h3>
-    <p>Fondamento del diritto penale e del giusto processo...</p>
-  </div>
-  <div class="articolo" data-materia="amministrativo">
-    <h3>La discrezionalità amministrativa</h3>
-    <p>Analisi delle fonti, dei limiti e del sindacato del giudice...</p>
-  </div>
-</div>
+  <h1>Notizie Giuridiche</h1>
 
-<script src="search.js"></script>
+  <!-- BARRA DI RICERCA -->
+  <input type="text" id="searchBar" onkeyup="filterArticles()" placeholder="Cerca nel sito...">
+
+  <!-- FILTRO PER MATERIA -->
+  <select id="materiaFiltro" onchange="filterArticles()">
+    <option value="tutte">Tutte le materie</option>
+    <option value="penale">Diritto Penale</option>
+    <option value="civile">Diritto Civile</option>
+    <option value="amministrativo">Diritto Amministrativo</option>
+  </select>
+
+  <!-- ARTICOLI DI PROVA -->
+  <div id="risultati">
+    <div class="articolo" data-materia="penale">
+      <h3>Riforma del Codice Penale</h3>
+      <p>Il nuovo disegno di legge introduce modifiche significative alla parte generale...</p>
+    </div>
+    <div class="articolo" data-materia="civile">
+      <h3>La nuova disciplina del danno non patrimoniale</h3>
+      <p>Una recente sentenza della Cassazione chiarisce i confini interpretativi...</p>
+    </div>
+    <div class="articolo" data-materia="amministrativo">
+      <h3>La motivazione nel provvedimento amministrativo</h3>
+      <p>Approfondimento sulle novità introdotte dal decreto legge 2025...</p>
+    </div>
+  </div>
+
+  <!-- FOOTER COINVOLGENTE -->
+  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
+    <p><strong>Sito Giuridico 2025</strong> – Conoscenza accessibile per uno Stato di diritto consapevole</p>
+    <p>Creato da Daniel3720 – Studente e futuro giurista | <a href="mailto:contatti@sitogiuridico.it" style="color:#ffa;">Contattaci</a></p>
+    <p><em>“Il diritto non è solo norma, è responsabilità.”</em></p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="search.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

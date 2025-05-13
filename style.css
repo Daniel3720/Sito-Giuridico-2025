@@ -173,3 +173,22 @@ nav a {
   font-weight: bold;
   text-decoration: none;
 }
+.faq {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+details {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  color: #003366;
+}

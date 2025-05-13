@@ -1,73 +1,62 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <title>Manifesto Editoriale – Daniel Razzante</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ius Portalex · Manifesto</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { plugins:[tailwindcss.typography] };
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>.gradient-bg{background:linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%)}</style>
 </head>
-  <script src="tooltip-norme.js"></script>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="autori.html">Autori</a> |
-      <a href="manifesto.html">Manifesto</a>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+
+<header class="gradient-bg text-white shadow-lg">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    <h1 class="text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h1>
+    <nav class="flex gap-4 text-sm font-medium">
+      <a href="index.html"           class="hover:underline">Home</a>
+      <a href="archivio-norme.html"  class="hover:underline">Fonti</a>
+      <a href="ricerca.html"         class="hover:underline">Ricerca</a>
+      <button onclick="toggleTheme()"><i data-lucide="moon-star" class="w-5 h-5"></i></button>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <h1>Manifesto Editoriale</h1>
+<main class="max-w-4xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-bold mb-8">Manifesto Editoriale</h2>
 
-  <section class="manifesto">
-    <h2><em>“Dove il diritto si fa coscienza, e la coscienza si fa norma”</em></h2>
+  <article class="prose lg:prose-xl dark:prose-invert">
+    <h3>I – Identità Costitutiva</h3>
+    <p>Il progetto nasce quale costruzione culturale autonoma, fondata su una visione alta di <span class="norma">art. 2 Cost.</span> …</p>
 
-    <p><strong>I – Identità Costitutiva</strong></p>
-    <p>
-      Il presente progetto nasce non come raccolta casuale di contenuti giuridici, ma come costruzione culturale autonoma,
-      fondata su un’idea alta di diritto quale strumento di emancipazione individuale e architettura dell’ordine democratico,
-      nel solco degli articoli 2, 3 e 54 della Costituzione repubblicana.
-    </p>
-
-    <p><strong>II – Principi Ordinanti</strong></p>
+    <h3>II – Principi Ordinanti</h3>
     <ul>
-      <li><strong>📚 Legalità sostanziale</strong> – Ogni contenuto è fondato su norme primarie, orientamenti giurisprudenziali consolidati e riflessione dottrinale coerente.</li>
-      <li><strong>🧭 Responsabilità scientifica</strong> – Rifiutiamo ogni superficialità divulgativa. Il sapere tecnico è accompagnato da rigore, fonti e onestà metodologica.</li>
-      <li><strong>⚖️ Accessibilità non semplificata</strong> – La semplicità è figlia della chiarezza, non dell’ignoranza. Il sapere è condiviso, non semplificato.</li>
-      <li><strong>🔍 Indipendenza ermeneutica</strong> – Non offriamo tesi precostituite ma stimoli sistemici. La nostra fedeltà è al metodo, non all’ideologia.</li>
-      <li><strong>🌱 Eticità della conoscenza giuridica</strong> – Ogni giurista è, prima ancora che tecnico, un funzionario dell’etica pubblica.</li>
+      <li><strong>Legalità sostanziale</strong> – contenuti verificati e fondati.</li>
+      <li><strong>Responsabilità scientifica</strong> – rigore metodologico.</li>
+      <li><strong>Accessibilità non semplificata</strong> – chiarezza senza banalizzazione.</li>
     </ul>
 
-    <p><strong>III – Destinatari Consapevoli</strong></p>
-    <p>
-      Ci rivolgiamo a studenti, funzionari, magistrati, avvocati e cittadini attivi che intendano oltrepassare l’informazione e giungere alla formazione.
-    </p>
+    <h3>III – Visione</h3>
+    <p>Un laboratorio di pensiero in cui il diritto è riflessione critica e azione etica.</p>
 
-    <p><strong>IV – Metodo</strong></p>
-    <ol>
-      <li>Studio plurifonte e sistematico</li>
-      <li>Redazione chiara, tecnica, fondata</li>
-      <li>Aggiornamento costante</li>
-      <li>Struttura accessibile e interattiva</li>
-    </ol>
+    <p class="text-right font-semibold mt-10">Daniel Razzante</p>
+  </article>
+</main>
 
-    <p><strong>V – Visione</strong></p>
-    <p>
-      Questo non è un portale, ma un laboratorio di pensiero critico. Un luogo in cui il diritto non si limita a essere letto, ma viene pensato, discusso, trasformato.
-    </p>
-    <p><em>Nessuna legge è veramente viva, se non è capita, interpretata, abitata.</em></p>
+<footer class="gradient-bg text-white text-center py-6 mt-16">
+  <p class="font-semibold">© 2025 Ius Portalex · Knowledge & Justice</p>
+</footer>
 
-    <br>
-    <p style="text-align:right; font-weight:bold;">
-      Daniel Razzante  
-    </p>
-  </section>
-
-  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
-    <p><strong>Sito Giuridico 2025</strong> – Un manifesto per il diritto pensato</p>
-    <p><em>“Non c’è giustizia senza comprensione.”</em></p>
-  </footer>
-
-  <script src="theme.js"></script>
-  <script src="sw-register.js"></script>
-  <script src="last-update.js"></script>
+<script src="theme.js"></script>
+<script src="sw-register.js"></script>
+<script src="last-update.js"></script>
+<script src="sidebar.js"></script>
+<script src="tooltip-norme.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

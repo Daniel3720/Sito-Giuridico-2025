@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ricerca Avanzata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contenuti.html">Notizie</a> |
+      <a href="approfondimenti.html">Approfondimenti</a> |
+      <a href="ricerca.html">🔎 Ricerca</a>
+    </nav>
+  </header>
+
+  <h1>Ricerca Avanzata nel Sito</h1>
+
+  <input type="text" id="barra-ricerca" placeholder="Inserisci una parola chiave...">
+  <select id="filtro-materia">
+    <option value="tutte">Tutte le materie</option>
+    <option value="penale">Penale</option>
+    <option value="civile">Civile</option>
+    <option value="amministrativo">Amministrativo</option>
+  </select>
+  <button onclick="eseguiRicerca()">Cerca</button>
+
+  <div id="risultati-ricerca"></div>
+
+  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
+    <p><strong>Sito Giuridico 2025</strong> – Cerca in tutto il portale con intelligenza</p>
+    <p><em>“Ogni ricerca è inizio di una comprensione.”</em></p>
+  </footer>
+
+  <script src="contenuti-db.js"></script>
+  <script src="ricerca.js"></script>
+  <script src="theme.js"></script>
+  <script src="sw-register.js"></script>
+  <script src="last-update.js"></script>
+</body>
+</html>

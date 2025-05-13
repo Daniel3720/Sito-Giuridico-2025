@@ -1,60 +1,28 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Archivio Normativo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="archivio-norme.html">📚 Archivio Normativo</a>
-    </nav>
-  </header>
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ius Portalex · Archivio Norme</title>
+<script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={plugins:[tailwindcss.typography]};</script>
+<script src="https://unpkg.com/lucide@latest"></script><style>.gradient-bg{background:linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%)}</style>
+</head><body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<header class="gradient-bg text-white shadow-lg"><div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6"><h1 class="text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h1><nav class="flex gap-4 text-sm font-medium"><a href="index.html">Home</a><a href="manifesto.html">Manifesto</a><a href="ricerca.html">Ricerca</a></nav></div></header>
 
-  <h1>Archivio Normativo Avanzato</h1>
-  <p>Consulta, scarica e naviga tra le fonti normative fondamentali del sistema giuridico italiano ed europeo.</p>
+<main class="max-w-4xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-bold mb-10">Archivio Normativo</h2>
 
-  <section>
-    <h2>🇮🇹 Fonti Fondamentali italiane</h2>
-    <ul>
-      <li><a href="costituzione.html">📜 Costituzione della Repubblica Italiana</a></li>
-      <li><a href="codice-penale.html">⚖️ Codice Penale</a></li>
-      <li><a href="codice-proc-penale.html">📂 Codice di Procedura Penale</a></li>
-      <li><a href="codice-civile.html">🏛️ Codice Civile</a></li>
-      <li><a href="codice-proc-civile.html">📁 Codice di Procedura Civile</a></li>
-      <li><a href="codice-amministrativo.html">🏗️ Codice dei Contratti Pubblici / Diritto Amm.</a></li>
-      <li><a href="leggi-ordinarie.html">📘 Leggi Ordinarie e Speciali (241/1990, 190/2012, ecc.)</a></li>
+  <section class="mb-10">
+    <h3 class="text-2xl font-semibold mb-3">Fonti Fondamentali</h3>
+    <ul class="space-y-2">
+      <li><i data-lucide="scroll" class="inline w-5 h-5 mr-1"></i><a href="costituzione.html" class="text-blue-600 font-medium">Costituzione Italiana</a></li>
+      <li><i data-lucide="gavel" class="inline w-5 h-5 mr-1"></i><a href="codice-penale.html" class="text-blue-600 font-medium">Codice Penale</a></li>
+      <li><i data-lucide="file-text" class="inline w-5 h-5 mr-1"></i>Codice Civile (coming soon)</li>
     </ul>
   </section>
 
   <section>
-    <h2>🇪🇺 Fonti Europee e Internazionali</h2>
-    <ul>
-      <li><a href="https://eur-lex.europa.eu">🇪🇺 EUR-Lex – Diritto dell'Unione Europea</a></li>
-      <li><a href="https://www.echr.coe.int">🇪🇺 CEDU – Convenzione Europea dei Diritti dell'Uomo</a></li>
-      <li><a href="https://www.un.org">🌍 Convenzioni ONU</a></li>
-      <li><a href="https://www.coe.int">🌐 Fonti Consiglio d’Europa</a></li>
-    </ul>
+    <h3 class="text-2xl font-semibold mb-3">Download PDF</h3>
+    <a href="pdf/costituzione.pdf" class="text-blue-600 font-medium flex items-center gap-1"><i data-lucide="download" class="w-5 h-5"></i>Costituzione (PDF)</a>
   </section>
+</main>
 
-  <section>
-    <h2>📥 Scarica i codici in PDF</h2>
-    <ul>
-      <li><a href="pdf/costituzione.pdf" download>Costituzione Italiana</a></li>
-      <li><a href="pdf/codice_penale.pdf" download>Codice Penale</a></li>
-      <li><a href="pdf/codice_civile.pdf" download>Codice Civile</a></li>
-    </ul>
-  </section>
-
-  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
-    <p><strong>Sito Giuridico 2025</strong> – L’archivio delle fonti, il cuore dell’ordinamento</p>
-    <p><em>“Conoscere le fonti è conoscere i fondamenti.”</em></p>
-  </footer>
-
-  <script src="theme.js"></script>
-  <script src="sw-register.js"></script>
-  <script src="last-update.js"></script>
-</body>
-</html>
+<footer class="gradient-bg text-white text-center py-6 mt-16"><p class="font-semibold">© 2025 Ius Portalex</p></footer>
+<script src="theme.js"></script><script src="sw-register.js"></script><script src="last-update.js"></script><script>lucide.createIcons();</script></body></html>

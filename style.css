@@ -286,3 +286,11 @@ summary {
   padding: 15px;
   border-radius: 8px;
 }
+.nota {
+  background-color: #fffbe6;
+  border-left: 4px solid #ffcc00;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}

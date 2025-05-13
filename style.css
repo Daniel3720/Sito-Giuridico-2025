@@ -192,3 +192,31 @@ summary {
   font-weight: bold;
   color: #003366;
 }
+.high-contrast {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+.high-contrast a {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+}
+
+.access-panel {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.access-panel button {
+  margin: 3px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}

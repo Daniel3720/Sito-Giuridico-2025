@@ -371,3 +371,21 @@ summary {
   max-width: 600px;
   font-size: 16px;
 }
+.storico-table {
+  width: 95%;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.storico-table th, .storico-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.storico-table th {
+  background-color: #003366;
+  color: white;
+}

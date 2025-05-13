@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Glossario Giuridico</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  <script src="tooltip-norme.js"></script>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="ricerca.html">Ricerca</a> |
-      <a href="glossario.html">📖 Glossario</a>
-    </nav>
-  </header>
+<!DOCTYPE html><html lang="it" class="scroll-smooth"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ius Portalex · Glossario</title>
+<script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={plugins:[tailwindcss.typography]};</script>
+<script src="https://unpkg.com/lucide@latest"></script><style>.gradient-bg{background:linear-gradient(135deg,#002b64 0%,#004d99 40%,#007acc 100%)}</style>
+</head><body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<header class="gradient-bg text-white shadow-lg"><div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6"><h1 class="text-2xl font-semibold tracking-wide">⚖️ Ius Portalex</h1><nav class="flex gap-4 text-sm font-medium"><a href="index.html">Home</a><a href="archivio-norme.html">Fonti</a><a href="ricerca.html">Ricerca</a></nav></div></header>
 
-  <h1>Glossario Giuridico</h1>
-  <input type="text" id="searchGlossario" placeholder="Cerca un termine..." oninput="filtraGlossario()">
+<main class="max-w-6xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-bold mb-10">Glossario Tecnico</h2>
+  <input id="searchGlossario" oninput="filtraGlossario()" placeholder="Cerca un termine…" class="w-full max-w-md px-4 py-2 border rounded mb-6"/>
+  <div id="glossarioContainer"></div>
+</main>
 
-  <div id="glossarioContainer">
-    <!-- I termini saranno caricati via JS -->
-  </div>
+<footer class="gradient-bg text-white text-center py-6 mt-16"><p class="font-semibold">© 2025 Ius Portalex</p></footer>
+<script src="glossario-db.js"></script><script src="glossario.js"></script>
+<script src="theme.js"></script><script src="sw-register.js"></script><script src="last-update.js"></script><script>lucide.createIcons();</script></body></html>
 
-  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
-    <p><strong>Sito Giuridico 2025</strong> – Conoscere i concetti per dominare i sistemi</p>
-    <p><em>“Ogni parola del diritto è il frammento di una teoria.”</em></p>
-  </footer>
 
   <script src="glossario-db.js"></script>
   <script src="glossario.js"></script>

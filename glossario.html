@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Glossario Giuridico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="ricerca.html">Ricerca</a> |
+      <a href="glossario.html">📖 Glossario</a>
+    </nav>
+  </header>
+
+  <h1>Glossario Giuridico</h1>
+  <input type="text" id="searchGlossario" placeholder="Cerca un termine..." oninput="filtraGlossario()">
+
+  <div id="glossarioContainer">
+    <!-- I termini saranno caricati via JS -->
+  </div>
+
+  <footer style="background:#003366; color:white; padding:20px; text-align:center;">
+    <p><strong>Sito Giuridico 2025</strong> – Conoscere i concetti per dominare i sistemi</p>
+    <p><em>“Ogni parola del diritto è il frammento di una teoria.”</em></p>
+  </footer>
+
+  <script src="glossario-db.js"></script>
+  <script src="glossario.js"></script>
+  <script src="theme.js"></script>
+  <script src="sw-register.js"></script>
+  <script src="last-update.js"></script>
+</body>
+</html>

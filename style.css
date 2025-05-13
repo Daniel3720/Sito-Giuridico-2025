@@ -54,3 +54,23 @@ nav a {
 .dark-mode nav a {
   color: #ffcc00;
 }
+.scheda-autore {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scheda-autore h2 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.scheda-autore a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #004080;
+}
